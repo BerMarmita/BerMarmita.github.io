@@ -1,0 +1,298 @@
+@font-face {
+    font-family: 'Nougat';
+    src: url('fonts/Nougat.ttf') format('truetype');
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 32px;
+}
+
+body {
+  font-family: 'Nougat', sans-serif;
+  background-image: url(imagem/baaul.png);
+  background-size: cover;    
+  background-position: center;  
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+}
+h1 {
+  margin: 0;
+}
+
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  height: auto;
+}
+
+.titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 2.5rem;
+}
+
+.paginas {
+  display: flex;
+  gap: 2rem;
+}
+
+.pagina1, .pagina2 {
+  font-size: 1.3rem;
+}
+
+.pagina1 a, .pagina2 a {
+  display: inline-block;
+  color: #ffcc00;
+  transition: transform 0.3s ease;
+}
+
+.pagina1 a:hover, .pagina2 a:hover {
+  transform: scale(1.1);
+}
+.cotil{
+  color: white;
+  font-size: 3rem;
+  text-shadow: 0.2rem 0.2rem 0px black;
+  text-align: center;
+}
+.stars{
+  color: red;
+  font-size: 4rem;
+  text-shadow: 0.2rem 0.2rem 0px black;
+  text-align: center;
+}
+
+
+
+.main {
+  display: flex;
+  min-height: 100vh;
+  padding: 0;
+}
+
+.anuncios {
+  width: 33.33%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.ad1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 33.33%;
+  padding: 5%;
+}
+.ad2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 33.33%;
+  padding: 5%;
+}
+.ad3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 33.33%;
+  padding: 5%;
+}
+.anuncios img {
+  max-width: 100%;
+  height: auto;
+}
+.texto {
+  padding: 0.5rem;
+  width: 66.66%;
+}
+.italico {
+  font-style: italic;
+}
+.negrito {
+  font-style: bold;
+}
+.texto a {
+  color: #ffcc00;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+.texto a:hover {
+  transform: scale(1.1);
+}
+
+.main h1 {
+  font-size: 2rem;
+  color: #ffcc00;
+  text-shadow: 0.1rem 0.1rem black;
+}
+.main p {
+  margin: 0.5rem;
+  color: white;
+  text-shadow: 0.1rem 0.1rem black;
+  text-align: justify;
+}
+
+.lista {
+  list-style: none;
+  padding-left: 0;
+  margin: 0.5rem;
+  color: white;
+  text-shadow: 0.1rem 0.1rem black;
+}
+ul.lista li {
+  position: relative;
+  padding-left: 2.5em;
+  margin-bottom: 1em;
+}
+
+ul.lista li::before {
+  content: "⭐";
+  position: absolute;
+  left: 0;
+  top: 0.2em;
+  font-size: 1em;
+  line-height: 1.2;
+}
+.titulolista {
+  color: #ffcc00;
+}
+
+
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid black;
+}
+.footer p {
+  color: #ffcc00;
+  text-shadow: 0.1rem 0.1rem black;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+
+  html {
+    font-size: 22px;
+  }
+  .header {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 1rem 0.5rem;
+  }
+  .titulo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.8rem;
+  }
+  .paginas {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+  }
+  .pagina1, .pagina2 {
+    width: auto;
+    font-size: 1.1rem;
+  }
+  .main {
+    flex-direction: column;
+  }
+  .anuncios {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem 0;
+  }
+
+  .ad1, .ad2, .ad3 {
+    width: 30%;
+    height: auto;
+    padding: 0.5rem;
+  }
+  .texto {
+    width: 100%;
+    padding: 1rem;
+  }
+  .texto h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .texto p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .footer p {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+@media (max-width: 600px) {
+  html{
+    font-size: 1.5rem;
+  }
+  .main{
+    flex-direction: column;
+  }
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+  }
+
+  .titulo {
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+
+  .paginas{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pagina1, .pagina2{
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .anuncios{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+
+  .ad3 {
+    width: 100%;
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .texto {
+    padding: 0.5rem;
+  }
+
+  .footer p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .ad1, .ad2{
+    display: none;
+  }
+}

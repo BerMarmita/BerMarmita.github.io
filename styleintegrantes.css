@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'Nougat';
+    src: url('fonts/Nougat.ttf') format('truetype');
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 32px;
+}
+
+body {
+  font-family: 'Nougat', sans-serif;
+  background-image: url(imagem/baaul.png);
+  background-size: cover;    
+  background-position: center;  
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+}
+h1 {
+  margin: 0;
+}
+
+
+
+.header {
+  padding: 1rem;
+  height: 5.5rem;
+  display: flex;
+}
+.header a {
+    text-decoration: none;
+}
+.titulo {
+  width: 33.33%;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 2rem;
+}
+.cotil{
+	color: white;
+	font-size: 3rem;
+	text-shadow: 0.2rem 0.2rem 0px black;
+	text-align: center;
+}
+.stars{
+	color: red;
+	font-size: 4rem;
+	text-shadow: 0.2rem 0.2rem 0px black;
+	text-align: center;
+}
+
+.main {
+  display: flex;
+  padding: 0;
+  margin-bottom: 0;
+  padding-top: 1rem;
+  padding-left: 2.5rem;
+}
+
+.anuncios {
+  width: 33.33%;
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ad3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 33.33%;
+  padding: 5%;
+}
+.anuncios img {
+  max-width: 80%;
+  height: auto;
+}
+.texto {
+  width: 66.66%;
+  margin-left: 0;
+  margin-right: ;
+}
+
+.main h1 {
+  font-size: 2rem;
+  color: #ffcc00;
+  text-shadow: 0.1rem 0.1rem black;
+}
+.main p {
+  margin: 0.5rem;
+  color: white;
+  text-shadow: 0.1rem 0.1rem black;
+  text-align: justify;
+}
+
+.main2 {
+    margin: 4rem;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tabela {
+    width: 100%;
+    border: 2px solid white;
+    border-collapse: collapse;
+    box-shadow: 0.5rem 0.5rem 10px black;
+    
+}
+th, td {
+    border: 1px solid white;
+    text-align: center;
+}
+th {
+    color: #ffcc00;
+    text-shadow: 0.1rem 0.1rem black;
+    font-size: 3rem;
+    padding: 0.8rem;
+}
+td {
+    color: white;
+    text-shadow: 0.1rem 0.1rem black;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
